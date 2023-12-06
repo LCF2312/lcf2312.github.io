@@ -1,39 +1,264 @@
+/*
+Author: Jaspal Singh
+Date: 18/10/2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div,img,ul {
+    margin: 0;
+    padding:0;
+    border: 0;
+} 
+/*Styles rules for body and images*/
 body{
-    background-color: #ccc;
+    background-color: #cccccc;
 }
-
 img{
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
+.img-width{
+      width: 100%;
+}
+img{
+    width: 100%;
+}
+/*Styles rules for header*/
 header {
-    width:25% ;
-    float: left;
+    width: 20%;
+}
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccc;
+    height: 190px;
 }
 
+.logo {
+    width: 100%;
+}
+
+/*Styles rules for navigation area*/
 nav{
-    width: 75%;
-    float: right;
-    margin: 5em 3em 0 0;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul{
     list-style-type: none;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 nav li{
     display: inline-block;
-    font-size: 1.75em;
+    font-size: 1.25em;
+    font-family: Verdana,Arial, sans-serif;
+    border-top: 1px solid #ffffff71;
 }
 nav li a {
     display: block;
-    color: #fff;
+    color: #3a0505;
     text-align: center;
     padding: 0.5em 1em;
     text-decoration:none;
 }
+/* show mobile class,hide tablte-esktop class*/
+.mobile {
+    display: block;
+}
+.tablet-desktop{
+    display: none;
+}
+/*Styles rules for main content*/
 main{
+    clear: right;
+    background-color: #ffffff40;
+    padding: 2%;
+    font-size: 1.25em;
+}
+.tel-link {
+    background-color: #fff;
+    border-radius: 5px;
+}
+.tel-link a {
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+.hours{
+    margin-left: 10%;
+}
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+#Grooming, #Adoption, #Training {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+.media-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.media-item {
+    width: 60%;
+    height: 40%;
+    margin: 20px;
+    object-fit: cover;
+}
+
+#Services {
     clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+#Services dt {
+ font-weight: bold;
+}
+
+#Services dd{
+    padding: 0.5% 1% 2% 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f482;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/*Styles rules for table content*/
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse:collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+}
+td {
+    background-color: beige;
+    border: #000;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.class-image {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.class-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+.class-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+#Contact {
+    text-align: center;
+}
+
+#Contact a {
+    color: #666600;
+    text-decoration: none;
+}
+.map {
+    border: 8px solid #000;
+}
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*Styles rules for footer content*/
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #1c0606;
+    padding: 0 1em;
+}
+footer p a {
+    color: #1d0606;
+    text-decoration: none;
 }
