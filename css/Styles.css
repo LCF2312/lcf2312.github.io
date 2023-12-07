@@ -68,6 +68,7 @@ nav li a {
     padding: 0.5em 1em;
     text-decoration:none;
 }
+nav a:hover {color:crimson;}
 /* show mobile class,hide tablte-esktop class*/
 .mobile {
     display: block;
